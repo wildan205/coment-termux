@@ -33,3 +33,10 @@
 - bash ubuntu.sh
 - lalu jalankan ubuntu dengan masukan coding /start-ubuntu.sh
 - sesudah itu langsung di update dengan masukan coding apt-get updat
+# install remo 777
+- apt update && apt upgrade
+- git clone https://github.com/remo7777/T-Header.git
+- cd T-header
+- ls
+- bash t-header.sh
+
