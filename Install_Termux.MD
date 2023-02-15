@@ -15,7 +15,7 @@
 - tuch .hushlogin
 - Enter Lalu Exit
 
-# cara mengunakan github
+# install comment github
 - apt update
 - apt upgrade
 - apt install git
