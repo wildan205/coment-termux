@@ -1,4 +1,4 @@
-# Install Termux Pemula
+# Install comment Termux Pemula
 - apt update 
 - apt upgrade
 - apt install git
@@ -39,4 +39,7 @@
 - cd T-header
 - ls
 - bash t-header.sh
-
+# install requests / pembacaan file
+- apt update & apt upgrade
+- pip3 install requests 
+- pip3 install bs4
