@@ -23,7 +23,7 @@
 - Baru masukan clone nya atau url
 
 # cara install ubuntu mengunakan handphone
-# bahan yang di butuhkan 
+# Requirements
 - install  Andronix
 - install VNC viewer
 # tata cara install
