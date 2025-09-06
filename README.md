@@ -45,7 +45,7 @@
 - jika ada peringatan tentang "encryption" kita terjang aja lah
 - masukkan password anda,Klik continue
 - ubuntu sudh terinstall 100% silahkan eksploitasi sesuai kebutuhan anda
-# tata cara keluar dari ubuntu yang kita install tadi 
+# tata cara keluar dari ubuntu dam termux yang kita install tadi 
 - untuk keluar dari remote desktop klik tombol X diatas
 - Untuk shutdown,masuk ke cli Termux
 Ketikkan "exit" Dan enter,sampai tulisan "root@localhost:~" berubah jadi "$"
