@@ -14,7 +14,7 @@ Now, there are two ways in which you can install Termux on your phone.
 
 - Download and Install the app from F-DROiD
 - Download the APK file from GitHub
-Tip: Be sure to carefully follow the steps in each method below to avoid any issues when installing Kali Linux on your Android phone later. Following the instructions closely will help prevent errors during the installation process.
+- Tip: Be sure to carefully follow the steps in each method below to avoid any issues when installing Kali Linux on your Android phone later. Following the instructions closely will help prevent errors during the installation process.
 
 - Install Termux from F-DROID
   
