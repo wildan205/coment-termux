@@ -40,7 +40,50 @@ Now, there are two ways in which you can install Termux on your phone.
 - Launch Termux on your phone and update and upgrade the system using the command below.
 - pkg update && pkg upgrade -y
 - termux-setup-storage
- # you will see a message like "Allow Termux access photos, media and files on your device." Click Allow. When done, execute the command below to install some packages needed to install Kali Linux on android
-# 
+- you will see a message like "Allow Termux access photos, media and files on your device." Click Allow. When done, execute the command below to install some packages needed to install Kali Linux on android
+# Fetch and Run the Installer Script
+- Up to this point, we have everything needed to install Kali on our Android device. First, we will need to download the installer script which we will use to download the Kali image file. Follow the steps below.
 
+Launch Termux from the applications menu.
 
+Execute the following apt command below to install the wget utility which we will use to fetch the installer script from GitHub.
+- apt install wget
+- Download the installer script from GitHub using the command below
+- wget https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-project/raw/master/nethunter-rootless/install-nethunter-termux
+- When you run the ls command, you will see a file called 'install-nethunter-termux'. You need to make this script executable by running the command below.
+- chmod +x install-nethunter-termux
+- Now, run the installer script using the command below
+- ./install-nethunter-termux
+- Nethunter ARM64 (full): Comprehensive Kali image with a wide range of tools for an extensive experience.
+- Nethunter ARM64 (minimal): Streamlined version with essential tools, suitable for limited storage or lighter installations.
+- Nethunter ARM64 (nano): Compact Kali image with minimal tools for specific, lightweight use cases.
+- In our case, we will install the Kali Nethunter (full) image. It is a large image and might take some time. However, it comes with all the tools you would expect to kickstart your penetration testing journey After successfully installing Kali Linux on your Android phone
+# Launch Kali Linux on Android
+- Up to this point, Kali Linux is downloaded and installed on your Android phone. However, you will notice that you are still not getting the Kali shell prompt. To launch Kali, type the command below and hit Enter
+- nethunter
+- cat /etc/os-release | grep "\bNAME="
+# Enable Kali Linux Graphical User Interface on Android
+- Up to this point, you can only use Kali Linux using the command-line prompt on the Termux. Luckily, there is a way you can easily access and use the default XFCE Desktop environment, which comes installed on Kali Linux. This procedure uses straightforward logic. We will use the Win-Kex utility. A tool that enables users running Kali Linux via WSL access the Kali Desktop Interface on their Windows PC. Kex works by creating a VNC session on Kali Linux, and you can access the running session graphically using a Kex-client utility like Nethunter-kex.
+- Follow the steps below to get started.
+
+Launch the Termux application and type nethunter to open the Kali Linux shell prompt.
+
+On the Kali Linux console, type kex and hit Enter.
+
+You will see a prompt to set up a VNC password. Enter your Password and confirm.
+
+# NOTE:
+- VNC passwords have a limit of up to 8 characters. If you set a password of more than eight characters, it is truncated to 8 (by default).
+  
+- Next, you will see a prompt to set a "view-only password." Type 'N' for no and hit Enter.
+
+To start Kex on your Android phone, run the command below:
+- kex start
+# Connect to Kali Linux instance on Android
+- Now, launch the Nethunter application and enter the settings shown in the image below. Luckily most of the fields are filled automatically. All you need to type is the Password. You don't need to type the VNC username.
+
+- When done, click Connect. That will launch Kali Desktop on your Mobile Phone in landscape mode, as shown below.
+
+- Congratulations! You are now running the full-featured Kali Linux operating system on your Android phone. Of course, navigating through the tiny menus can be a little difficult, but luckily you can use the cursor and using your phone touchscreen as the touchpad/mouse for control.
+# stop the VNC server, switch to the Termux application and type the command below:
+- kex stop
