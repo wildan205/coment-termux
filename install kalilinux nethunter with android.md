@@ -40,7 +40,7 @@ Now, there are two ways in which you can install Termux on your phone.
 - Launch Termux on your phone and update and upgrade the system using the command below.
 - pkg update && pkg upgrade -y
 - termux-setup-storage
- #you will see a message like "Allow Termux access photos, media and files on your device." Click Allow. When done, execute the command below to install some packages needed to install Kali Linux on android
+ # you will see a message like "Allow Termux access photos, media and files on your device." Click Allow. When done, execute the command below to install some packages needed to install Kali Linux on android
 # 
 
 
